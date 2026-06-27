@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">20W Solar Panel Charger</title>
+  <desc id="desc">A foldable solar panel charger with USB outputs for outdoor charging.</desc>
+  <defs>
+    <radialGradient id="bg" cx="52%" cy="42%" r="72%"><stop offset="0" stop-color="#2d2f24"/><stop offset=".5" stop-color="#131815"/><stop offset="1" stop-color="#050607"/></radialGradient>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#1e3750"/><stop offset=".45" stop-color="#0c1725"/><stop offset="1" stop-color="#0d0f14"/></linearGradient>
+    <linearGradient id="rim" x1="0" x2="1"><stop offset="0" stop-color="#8a939a"/><stop offset=".5" stop-color="#2b3238"/><stop offset="1" stop-color="#080a0d"/></linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="900" rx="44" fill="url(#bg)"/>
+  <circle cx="705" cy="178" r="72" fill="#ffcd3a" opacity=".95" filter="url(#glow)"/>
+  <g stroke="#ffcd3a" stroke-width="8" stroke-linecap="round" opacity=".65">
+    <path d="M705 64v-42M705 334v-42M590 178h-42M862 178h-42M624 97l-30-30M816 289l-30-30M624 259l-30 30M816 67l-30 30"/>
+  </g>
+  <ellipse cx="450" cy="720" rx="320" ry="58" fill="#000" opacity=".42"/>
+  <g transform="translate(145 258) skewY(-5)">
+    <rect x="0" y="0" width="280" height="385" rx="22" fill="url(#rim)"/>
+    <rect x="18" y="20" width="244" height="344" rx="13" fill="url(#panel)"/>
+    <g stroke="#00f5f1" stroke-width="3" opacity=".45">
+      <path d="M62 20v344M106 20v344M150 20v344M194 20v344M238 20v344"/>
+      <path d="M18 70h244M18 120h244M18 170h244M18 220h244M18 270h244M18 320h244"/>
+    </g>
+  </g>
+  <g transform="translate(427 237) skewY(5)">
+    <rect x="0" y="0" width="280" height="405" rx="22" fill="url(#rim)"/>
+    <rect x="18" y="20" width="244" height="364" rx="13" fill="url(#panel)"/>
+    <g stroke="#00f5f1" stroke-width="3" opacity=".45">
+      <path d="M62 20v364M106 20v364M150 20v364M194 20v364M238 20v364"/>
+      <path d="M18 72h244M18 124h244M18 176h244M18 228h244M18 280h244M18 332h244"/>
+    </g>
+  </g>
+  <rect x="360" y="634" width="180" height="74" rx="18" fill="#14191d" stroke="#68737b" stroke-width="5"/>
+  <rect x="391" y="660" width="46" height="20" rx="6" fill="#040507" stroke="#00f5f1" stroke-width="4"/>
+  <rect x="464" y="657" width="47" height="27" rx="8" fill="#040507" stroke="#00f5f1" stroke-width="4"/>
+  <path d="M449 625c0-38 40-62 72-39" fill="none" stroke="#00f5f1" stroke-width="7" stroke-linecap="round" opacity=".75" filter="url(#glow)"/>
+  <text x="450" y="817" text-anchor="middle" fill="#ffcd3a" font-size="32" font-weight="800" letter-spacing="5" font-family="Arial, Helvetica, sans-serif">20W SOLAR PANEL</text>
+</svg>
