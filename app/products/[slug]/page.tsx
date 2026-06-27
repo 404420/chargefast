@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Gift, ShieldCheck, Truck, Zap } from 'lucide-react';
-import { TopNav } from '../../components';
+import { DeviceMockup, TopNav } from '../../components';
 import { getProduct, products } from '../../data/products';
 
 export function generateStaticParams() {
@@ -16,9 +16,9 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
       <section className="product-page">
         <div className="gallery">
           {product.badge ? <span className="gallery-badge">{product.badge}</span> : null}
-          <img src={product.image} alt={product.name} />
+          <DeviceMockup large />
           <div className="thumb-row">
-            <img src={product.image} alt="Product angle" />
+            <div>3-IN-1 CHARGING</div>
             <div>FAST USB-C PD</div>
             <div>MAGSAFE READY</div>
           </div>
