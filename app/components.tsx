@@ -10,12 +10,11 @@ export function TopNav() {
         <div className="nav-left">
           <Link href="/products/trio-magsafe-station">TRIO STATION <span className="hot-pill">Hot</span></Link>
           <Link href="/shop">BUY 2 GET 1 FREE <span className="deal-pill">Deal</span></Link>
-          <Link href="/shop">SHOP ALL</Link>
+          <Link className="shop-nav-link" href="/shop">SHOP ALL</Link>
         </div>
         <Link className="brand" href="/">CHARGEFAST</Link>
         <div className="nav-actions">
           <Search size={20} aria-hidden="true" />
-          <span>USD</span>
           <button className="track-button">TRACK YOUR ORDER</button>
           <ShoppingCart size={22} aria-hidden="true" />
           <Menu className="mobile-menu" size={24} aria-hidden="true" />
