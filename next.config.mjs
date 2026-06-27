@@ -9,6 +9,9 @@ const nextConfig = {
   },
   basePath: isGithubPages ? '/chargefast' : '',
   assetPrefix: isGithubPages ? '/chargefast/' : '',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGithubPages ? '/chargefast' : '',
+  },
 };
 
 export default nextConfig;
