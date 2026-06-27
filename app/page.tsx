@@ -15,7 +15,10 @@ export default function Home() {
         <div className="hero-stage"><DeviceMockup large /></div>
         <div className="hero-content">
           <span className="hero-kicker"><Zap size={18} /> Charge every device faster</span>
-          <h1>POWER UP <em>EVERYTHING</em></h1>
+          <h1 className="electric-title" data-text="POWER UP EVERYTHING">
+            <span>POWER UP</span>
+            <em>EVERYTHING</em>
+          </h1>
           <p>MagSafe stations, Apple Watch docks, AirPods chargers, braided USB-C cables and solar charging kits for everyday carry.</p>
           <Link href="/shop" className="primary-cta">SHOP ALL <ArrowRight size={22} /></Link>
           <span className="review-line">★★★★★ Trusted by fast-moving tech users</span>
