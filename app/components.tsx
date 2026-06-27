@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { BatteryCharging, Menu, Search, ShieldCheck, ShoppingCart, Truck } from 'lucide-react';
 import { Product } from './data/products';
 
+const assetPath = (path: string) => `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${path}`;
+
 export function TopNav() {
   return (
     <header className="site-header">
@@ -38,12 +40,23 @@ export function DeviceMockup({ large = false }: { large?: boolean }) {
   );
 }
 
+export function ProductImage({ product, variant = 'card' }: { product: Product; variant?: 'card' | 'gallery' }) {
+  return (
+    <img
+      className={variant === 'gallery' ? 'product-image product-image-gallery' : 'product-image'}
+      src={assetPath(product.image)}
+      alt={product.name}
+      loading={variant === 'gallery' ? 'eager' : 'lazy'}
+    />
+  );
+}
+
 export function ProductCard({ product }: { product: Product }) {
   return (
     <Link className={`product-card tint-${product.tint}`} href={`/products/${product.slug}`}>
       <div className="product-visual">
         {product.badge ? <span className="product-badge">{product.badge}</span> : null}
-        <DeviceMockup />
+        <ProductImage product={product} />
       </div>
       <span className="product-name">{product.name}</span>
       <span className="stars">{product.rating}</span>
