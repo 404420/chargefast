@@ -1,17 +1,18 @@
 import Link from 'next/link';
 import { ArrowRight, BatteryCharging, Zap } from 'lucide-react';
 import { products } from './data/products';
-import { ProductCard, TopNav, TrustBar } from './components';
+import { DeviceMockup, ProductCard, TopNav, TrustBar } from './components';
 
 export default function Home() {
   return (
     <main>
       <TopNav />
       <section className="hero">
-        <video className="hero-video" autoPlay muted loop playsInline poster="/charger-hero.jpg">
+        <video className="hero-video" autoPlay muted loop playsInline>
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
         <div className="hero-overlay" />
+        <div className="hero-stage"><DeviceMockup large /></div>
         <div className="hero-content">
           <span className="hero-kicker"><Zap size={18} /> Charge every device faster</span>
           <h1>POWER UP <em>EVERYTHING</em></h1>
