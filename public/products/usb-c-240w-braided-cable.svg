@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">240W Braided USB-C Cable</title>
+  <desc id="desc">A premium braided USB-C cable with metal connectors and fast charging glow.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="43%" r="70%"><stop offset="0" stop-color="#263239"/><stop offset=".6" stop-color="#11151a"/><stop offset="1" stop-color="#050607"/></radialGradient>
+    <linearGradient id="braid" x1="0" x2="1"><stop offset="0" stop-color="#15191f"/><stop offset=".5" stop-color="#65707a"/><stop offset="1" stop-color="#0a0c0f"/></linearGradient>
+    <linearGradient id="metal" x1="0" x2="1"><stop offset="0" stop-color="#d4dde3"/><stop offset=".45" stop-color="#4c5660"/><stop offset="1" stop-color="#101318"/></linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="weave" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><rect width="34" height="34" fill="transparent"/><path d="M0 8h34M0 25h34" stroke="#87929c" stroke-width="6" opacity=".28"/></pattern>
+  </defs>
+  <rect width="900" height="900" rx="44" fill="url(#bg)"/>
+  <ellipse cx="450" cy="710" rx="320" ry="62" fill="#000" opacity=".45"/>
+  <path d="M242 274c212-126 523-54 496 135-19 132-218 123-343 178-110 48-107 147 11 163 145 19 260-62 266-151" fill="none" stroke="#0b0e12" stroke-width="70" stroke-linecap="round"/>
+  <path d="M242 274c212-126 523-54 496 135-19 132-218 123-343 178-110 48-107 147 11 163 145 19 260-62 266-151" fill="none" stroke="url(#braid)" stroke-width="48" stroke-linecap="round"/>
+  <path d="M242 274c212-126 523-54 496 135-19 132-218 123-343 178-110 48-107 147 11 163 145 19 260-62 266-151" fill="none" stroke="url(#weave)" stroke-width="48" stroke-linecap="round" opacity=".72"/>
+  <g transform="translate(159 236) rotate(-23)">
+    <rect x="0" y="0" width="146" height="86" rx="20" fill="url(#metal)" stroke="#aab5bd" stroke-width="4"/>
+    <rect x="-54" y="18" width="72" height="50" rx="12" fill="#14191f" stroke="#66717a" stroke-width="4"/>
+    <rect x="-80" y="30" width="34" height="26" rx="6" fill="#07090d" stroke="#b5c0c7" stroke-width="3"/>
+    <text x="74" y="55" text-anchor="middle" font-size="24" fill="#00f5f1" font-weight="800" font-family="Arial">240W</text>
+  </g>
+  <g transform="translate(617 542) rotate(18)">
+    <rect x="0" y="0" width="146" height="86" rx="20" fill="url(#metal)" stroke="#aab5bd" stroke-width="4"/>
+    <rect x="128" y="18" width="72" height="50" rx="12" fill="#14191f" stroke="#66717a" stroke-width="4"/>
+    <rect x="192" y="30" width="34" height="26" rx="6" fill="#07090d" stroke="#b5c0c7" stroke-width="3"/>
+    <path d="M45 60h58" stroke="#00f5f1" stroke-width="7" stroke-linecap="round" filter="url(#glow)"/>
+  </g>
+  <path d="M232 670c71-25 151-21 222 12" stroke="#00f5f1" stroke-width="7" stroke-linecap="round" opacity=".7" filter="url(#glow)"/>
+  <text x="450" y="817" text-anchor="middle" fill="#00f5f1" font-size="32" font-weight="800" letter-spacing="5" font-family="Arial, Helvetica, sans-serif">BRAIDED USB-C</text>
+</svg>
