@@ -15,7 +15,7 @@ export function TopNav() {
         <Link className="brand" href="/">CHARGEFAST</Link>
         <div className="nav-actions">
           <Search size={20} aria-hidden="true" />
-          <span>🇺🇸 USD</span>
+          <span>USD</span>
           <button className="track-button">TRACK YOUR ORDER</button>
           <ShoppingCart size={22} aria-hidden="true" />
           <Menu className="mobile-menu" size={24} aria-hidden="true" />
@@ -26,12 +26,25 @@ export function TopNav() {
   );
 }
 
+export function DeviceMockup({ large = false }: { large?: boolean }) {
+  return (
+    <div className={large ? 'device-mockup large' : 'device-mockup'} aria-hidden="true">
+      <div className="phone"><span /><b>10% Charged</b></div>
+      <div className="watch"><span /><b>10%</b></div>
+      <div className="buds" />
+      <div className="charger-base" />
+      <div className="charge-ring ring-one" />
+      <div className="charge-ring ring-two" />
+    </div>
+  );
+}
+
 export function ProductCard({ product }: { product: Product }) {
   return (
     <Link className={`product-card tint-${product.tint}`} href={`/products/${product.slug}`}>
       <div className="product-visual">
         {product.badge ? <span className="product-badge">{product.badge}</span> : null}
-        <img src={product.image} alt={product.name} />
+        <DeviceMockup />
       </div>
       <span className="product-name">{product.name}</span>
       <span className="stars">{product.rating}</span>
