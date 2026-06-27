@@ -1,0 +1,169 @@
+.shop-nav-link {
+  position: relative;
+  padding: 8px 0;
+  transition: color .2s ease, text-shadow .2s ease;
+}
+
+.shop-nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(90deg, transparent, var(--cyan), white, var(--cyan), transparent);
+  box-shadow: 0 0 12px var(--cyan);
+  transition: transform .25s ease;
+}
+
+.shop-nav-link:hover {
+  color: var(--cyan);
+  text-shadow: 0 0 8px var(--cyan), 0 0 18px rgba(0, 245, 241, .75);
+}
+
+.shop-nav-link:hover::after {
+  transform: scaleX(1);
+  animation: electric-line .85s linear infinite;
+}
+
+.electric-title {
+  position: relative;
+  display: grid;
+  gap: .03em;
+  isolation: isolate;
+  text-shadow: 0 0 10px rgba(255, 255, 255, .32), 0 0 22px rgba(0, 245, 241, .22);
+}
+
+.electric-title span,
+.electric-title em {
+  position: relative;
+  display: block;
+  background: linear-gradient(100deg, #f8ffff 0%, #dfeff0 23%, #ffffff 38%, #00f5f1 55%, #f8ffff 72%, #00f5f1 100%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: electric-flow 3.2s linear infinite, electric-flicker 5.8s steps(1) infinite;
+}
+
+.electric-title em {
+  background-image: linear-gradient(100deg, #00f5f1 0%, #eaffff 34%, #00f5f1 58%, #7ffffd 78%, #00f5f1 100%);
+  text-shadow: 0 0 12px rgba(0, 245, 241, .7), 0 0 32px rgba(0, 245, 241, .46), 0 0 54px rgba(0, 245, 241, .28);
+}
+
+.electric-title::before,
+.electric-title::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  display: grid;
+  place-items: center;
+  white-space: normal;
+  color: transparent;
+  text-shadow: 0 0 22px rgba(0, 245, 241, .55);
+  opacity: .65;
+  pointer-events: none;
+}
+
+.electric-title::before {
+  transform: translate(2px, 0);
+  clip-path: polygon(0 16%, 100% 10%, 100% 23%, 0 29%);
+  animation: electric-jolt 2.2s infinite;
+}
+
+.electric-title::after {
+  transform: translate(-2px, 0);
+  clip-path: polygon(0 63%, 100% 56%, 100% 72%, 0 78%);
+  animation: electric-jolt 2.8s infinite reverse;
+}
+
+.primary-cta {
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+  transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
+}
+
+.primary-cta::before {
+  content: '';
+  position: absolute;
+  inset: -45% -18%;
+  transform: translateX(-78%) rotate(18deg);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .62), transparent);
+  transition: transform .45s ease;
+}
+
+.primary-cta::after {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  opacity: .35;
+  pointer-events: none;
+}
+
+.primary-cta:hover {
+  transform: translateY(-3px) scale(1.02);
+  filter: saturate(1.12);
+  box-shadow: 0 0 24px rgba(0, 245, 241, .68), 0 0 56px rgba(0, 245, 241, .35), 0 14px 34px rgba(0, 0, 0, .42);
+}
+
+.primary-cta:hover::before {
+  transform: translateX(78%) rotate(18deg);
+}
+
+.primary-cta svg {
+  transition: transform .22s ease, filter .22s ease;
+}
+
+.primary-cta:hover svg {
+  transform: translateX(7px);
+  filter: drop-shadow(0 0 5px #001212);
+}
+
+@keyframes electric-flow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 220% 50%; }
+}
+
+@keyframes electric-flicker {
+  0%, 7%, 9%, 100% { opacity: 1; filter: brightness(1); }
+  8% { opacity: .72; filter: brightness(1.7); }
+  38% { opacity: .92; filter: brightness(1.28); }
+  39% { opacity: 1; filter: brightness(2); }
+  61% { opacity: .86; filter: brightness(1.2); }
+  62% { opacity: 1; filter: brightness(1.85); }
+}
+
+@keyframes electric-jolt {
+  0%, 76%, 100% { opacity: 0; transform: translate(0, 0); }
+  77% { opacity: .75; transform: translate(3px, -1px); }
+  78% { opacity: .35; transform: translate(-4px, 1px); }
+  79% { opacity: .65; transform: translate(2px, 0); }
+  80% { opacity: 0; transform: translate(0, 0); }
+}
+
+@keyframes electric-line {
+  0% { background-position: 0 50%; }
+  100% { background-position: 120px 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .electric-title span,
+  .electric-title em,
+  .electric-title::before,
+  .electric-title::after,
+  .shop-nav-link:hover::after {
+    animation: none;
+  }
+
+  .primary-cta,
+  .primary-cta::before,
+  .primary-cta svg {
+    transition: none;
+  }
+}
