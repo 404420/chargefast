@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Trio MagSafe Charging Station</title>
+  <desc id="desc">A black 3-in-1 wireless charging station for iPhone, Apple Watch and AirPods.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#273139"/>
+      <stop offset="0.55" stop-color="#11151a"/>
+      <stop offset="1" stop-color="#060707"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#555d67"/>
+      <stop offset="0.45" stop-color="#15191f"/>
+      <stop offset="1" stop-color="#050607"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fbffff"/>
+      <stop offset="0.12" stop-color="#e8f6ff"/>
+      <stop offset="0.18" stop-color="#0a0d11"/>
+      <stop offset="0.74" stop-color="#090b10"/>
+      <stop offset="1" stop-color="#f4ffff"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="900" rx="44" fill="url(#bg)"/>
+  <ellipse cx="475" cy="710" rx="300" ry="56" fill="#000" opacity=".45"/>
+  <rect x="210" y="645" width="520" height="118" rx="28" fill="url(#metal)" stroke="#2e3840" stroke-width="4"/>
+  <rect x="250" y="680" width="435" height="44" rx="22" fill="#07090b" opacity=".7"/>
+  <g transform="translate(205 145)">
+    <rect x="0" y="0" width="230" height="445" rx="48" fill="#05070a" stroke="#20262d" stroke-width="12"/>
+    <rect x="18" y="20" width="194" height="405" rx="36" fill="url(#screen)"/>
+    <rect x="83" y="28" width="66" height="13" rx="8" fill="#07090c"/>
+    <circle cx="116" cy="230" r="72" fill="none" stroke="#baff2e" stroke-width="18" stroke-linecap="round" stroke-dasharray="210 260" transform="rotate(-18 116 230)" filter="url(#glow)"/>
+    <path d="M124 185 87 255h42l-16 78 66-112h-44l24-36z" fill="#baff2e" filter="url(#glow)"/>
+    <text x="116" y="338" text-anchor="middle" fill="#ffffff" font-size="31" font-family="Arial, Helvetica, sans-serif">10% Charged</text>
+  </g>
+  <g transform="translate(520 205)">
+    <rect x="53" y="-88" width="56" height="116" rx="26" fill="#191e24"/>
+    <rect x="53" y="246" width="56" height="104" rx="25" fill="#191e24"/>
+    <rect x="0" y="0" width="162" height="255" rx="42" fill="#05070a" stroke="#222932" stroke-width="10"/>
+    <circle cx="81" cy="104" r="48" fill="none" stroke="#caff47" stroke-width="14" stroke-linecap="round" stroke-dasharray="118 170" transform="rotate(-20 81 104)" filter="url(#glow)"/>
+    <path d="M85 74 61 124h28l-10 54 47-79H96l17-25z" fill="#caff47"/>
+    <text x="81" y="184" text-anchor="middle" fill="#ffffff" font-size="18" font-family="Arial, Helvetica, sans-serif">10%</text>
+  </g>
+  <g transform="translate(421 573)">
+    <rect x="0" y="0" width="186" height="92" rx="42" fill="#f5fbff" stroke="#d7e0e6" stroke-width="8"/>
+    <rect x="73" y="61" width="40" height="8" rx="5" fill="#89939b"/>
+  </g>
+  <circle cx="320" cy="667" r="85" fill="none" stroke="#00f5f1" stroke-width="8" opacity=".75" filter="url(#glow)"/>
+  <circle cx="514" cy="670" r="98" fill="none" stroke="#00f5f1" stroke-width="8" opacity=".7" filter="url(#glow)"/>
+  <text x="450" y="826" text-anchor="middle" fill="#00f5f1" font-size="32" font-weight="800" letter-spacing="5" font-family="Arial, Helvetica, sans-serif">3-IN-1 MAGSAFE</text>
+</svg>
