@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">65W Compact GaN Charger</title>
+  <desc id="desc">A compact black 65W GaN wall charger with folding plug and USB-C ports.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%"><stop offset="0" stop-color="#302c3d"/><stop offset=".55" stop-color="#14151a"/><stop offset="1" stop-color="#050607"/></radialGradient>
+    <linearGradient id="body" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#4e5660"/><stop offset=".35" stop-color="#1f252c"/><stop offset="1" stop-color="#07090c"/></linearGradient>
+    <linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#d8e0e7"/><stop offset=".5" stop-color="#67727c"/><stop offset="1" stop-color="#1a2027"/></linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="900" rx="44" fill="url(#bg)"/>
+  <ellipse cx="450" cy="725" rx="260" ry="58" fill="#000" opacity=".45"/>
+  <g transform="translate(284 176)">
+    <rect x="0" y="60" width="330" height="430" rx="68" fill="url(#body)" stroke="#363f48" stroke-width="7"/>
+    <rect x="35" y="95" width="260" height="360" rx="46" fill="#12161c" opacity=".7"/>
+    <rect x="80" y="7" width="54" height="118" rx="16" fill="url(#edge)" transform="rotate(-18 107 66)"/>
+    <rect x="196" y="-2" width="54" height="122" rx="16" fill="url(#edge)" transform="rotate(18 223 59)"/>
+    <rect x="88" y="274" width="154" height="72" rx="24" fill="#06080b" stroke="#00f5f1" stroke-width="6" filter="url(#glow)"/>
+    <rect x="111" y="294" width="108" height="32" rx="12" fill="#111820" stroke="#7dfdfa" stroke-width="3"/>
+    <rect x="106" y="368" width="118" height="54" rx="18" fill="#080b0f" stroke="#6d7680" stroke-width="5"/>
+    <text x="165" y="217" text-anchor="middle" fill="#ffffff" font-size="86" font-style="italic" font-weight="900" font-family="Arial, Helvetica, sans-serif">65W</text>
+    <text x="165" y="254" text-anchor="middle" fill="#00f5f1" font-size="25" font-weight="800" letter-spacing="5" font-family="Arial, Helvetica, sans-serif">GaN</text>
+  </g>
+  <path d="M250 604c127 78 274 78 402 0" fill="none" stroke="#00f5f1" stroke-width="7" stroke-linecap="round" opacity=".68" filter="url(#glow)"/>
+  <path d="M306 642c87 39 203 40 292 0" fill="none" stroke="#8a6cff" stroke-width="6" stroke-linecap="round" opacity=".7" filter="url(#glow)"/>
+  <text x="450" y="817" text-anchor="middle" fill="#a997ff" font-size="32" font-weight="800" letter-spacing="5" font-family="Arial, Helvetica, sans-serif">COMPACT GAN</text>
+</svg>
