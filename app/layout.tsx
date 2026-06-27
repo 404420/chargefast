@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import './effects.css';
+import './mobile.css';
 
 export const metadata: Metadata = {
   title: 'ChargeFast | Fast charging gear',
